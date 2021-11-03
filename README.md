@@ -12,4 +12,8 @@ QRCode.js : https://davidshimjs.github.io/qrcodejs/</br>
 &#9744; La collection</br>
 &#9744;Le scan des codes (Camera) </br>
 &#9744;L’affichage en AR des œuvres</br>
-&#9744;Création du code QR (Gallery)</br>
+&#9744;Création du code QR (Gallery)</br></br></br>
+
+
+<h3>Liens utiles:</h3>
+Les maquettes : https://www.figma.com/file/Zxwzqe7SEfuQjLIIHGSJB2/Untitled

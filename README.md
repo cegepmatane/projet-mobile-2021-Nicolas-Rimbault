@@ -1,6 +1,6 @@
 # Projet QR Art
-<h1> Résumer du projet</h1></br>
-Application de collection d’œuvre d’artiste. L’utilisateur doit scanner des codes QR cacher dans un lieu afin d’obtenir l’œuvre relier à celui-ci. Création de son propre code QR avec ses propres dessin. </br></br>
+<h1> Résumé du projet</h1></br>
+Application de collection d’œuvres d’artistes. L’utilisateur doit scanner des codes QR cachés dans un lieu afin d’obtenir l’œuvre reliée à celui-ci. Création de son propre code QR avec ses propres dessins. </br></br>
 <h1> Choix des technologies</h1> </br>
 Cordova </br>
 nimiq/qr-scanner : https://github.com/nimiq/qr-scanner </br>

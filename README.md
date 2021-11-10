@@ -12,8 +12,19 @@ QRCode.js : https://davidshimjs.github.io/qrcodejs/</br>
 &#9744; La collection</br>
 &#9744;Le scan des codes (Camera) </br>
 &#9744;L’affichage en AR des œuvres</br>
-&#9744;Création du code QR (Gallery)</br></br></br>
-
-
-<h3>Liens utiles:</h3>
-Les maquettes : https://www.figma.com/file/Zxwzqe7SEfuQjLIIHGSJB2/Untitled
+&#9744;Création du code QR (Gallery)</br></br>
+<h1>Échanges de données</h1>
+<h3>Protocole</h3>
+Lorsqu'un QR code est scanné, le numéro du scan est envoyé à la base de données qui elle, renvoie les données de l'item lié au scan et affiche l'item sur l'écran.<br>
+<br>
+<h3>Échantillon de données</h3>
+Échantillon de données pour la récupération d'un item.<br>
+<code>
+{"item": {
+    "id": "1",
+    "nom": "BoDessin",
+    "artiste": "Sébastien",
+    "image": "bodessin.png",
+    "date": "2021-11-10"
+}}
+</code>

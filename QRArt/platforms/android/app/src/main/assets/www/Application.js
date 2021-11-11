@@ -1,5 +1,5 @@
 ﻿class Application {
-  constructor(window, vuePrincipale){
+  constructor(window, vuePrincipale, vueListeItem){
 
     this.window = window;
     // this.listeJeu = [{titre:"Metal Gear Solid", description:"Jeu d'infiltration", studio:"Konami",prix:"59",note:"10", id:0},
@@ -8,6 +8,7 @@
     // this.listeJeu = [new Jeu("Metal Gear Solid", "Jeu d'infiltration", "Konami","59","10", 0),new Jeu("Silent Hill", "Jeu Survival Horror", "Konami","59","8", 1),new Jeu("Life Is Strage", "Jeu d'aventure graphique", "Dontnod","59","9", 2)];
 
     this.vuePrincipale = vuePrincipale;
+    this.vueListeItem = vueListeItem;
 
     console.log("Chargement");
 
@@ -19,11 +20,13 @@
 
   naviguer(){
     let hash = window.location.hash;
-    console.log("Chargement");
-
-    this.vuePrincipale.afficher();
+    if(!hash){
+      this.vuePrincipale.afficher();
+    }
+    else if(hash.match(/^#liste-item/))
+      this.vueListeItem.afficher()
     }
   }
 
-new Application(window, new VuePrincipale());
+new Application(window, new VuePrincipale(), new VueListeItem());
 

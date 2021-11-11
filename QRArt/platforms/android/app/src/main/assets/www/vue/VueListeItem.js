@@ -9,7 +9,7 @@ class VueListeItem {
     }
 
     afficher() {
-        document.getElementById("body")[0].innerHTML = this.html;
+        document.getElementsByTagName("body")[0].innerHTML = this.html;
 
         let listeItem = document.getElementById("liste-item");
         const listeItemHTML = listeItem.innerHTML;

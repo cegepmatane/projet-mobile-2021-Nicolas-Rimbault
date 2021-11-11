@@ -7,9 +7,9 @@ body{
 ul {
   list-style-type: none;
   margin-top: auto;
-  padding: 0;
+  padding: 0; 
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(24, 24, 24);
   display: flex;
   justify-content: space-around;
 }
@@ -35,10 +35,20 @@ li a:hover {
   height: 50%;
 }
 
+.active{
+  border-style: none none solid none;
+  border-radius: 1px;
+}
+
 .bouton_photo{
+  display: flex;
+  justify-content: center;
+}
+
+.bouton_photo_div{
   position: absolute;
-  top: 75%;
-  left: 42%;
+  top: 73vh;
+  width: 100%;
 }
 /* Camera  */
 
@@ -66,4 +76,22 @@ li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+a:hover {
+  background-color: inherit;
+  color: inherit;
+  
+}
+
+
+.icons-qr-code-detecteur-div{
+  position: absolute;
+  top: 25vh;
+  width: 100%;
+}
+
+.icons-qr-code-detecteur{
+  display: flex;
+  justify-content: center;
 }

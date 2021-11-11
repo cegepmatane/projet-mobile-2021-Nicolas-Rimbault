@@ -4,8 +4,8 @@ class VuePrincipale{
   }
 
   afficher(){
-    console.log("Test Vue Principale");
     document.getElementsByTagName("body")[0].innerHTML = this.html;
+    
     // Grab elements, create settings, etc.
     var video = document.getElementById('video');
 

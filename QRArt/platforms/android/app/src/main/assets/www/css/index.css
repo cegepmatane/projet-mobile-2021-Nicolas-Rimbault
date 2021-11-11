@@ -2,6 +2,7 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 ul {
   list-style-type: none;
@@ -28,12 +29,20 @@ li a {
 li a:hover {
   background-color: #111;
 }
+<<<<<<< HEAD
 
 .icons {
   width: 50%; 
   height: 50%;
 }
 
+=======
+.bouton_photo{
+  position: absolute;
+  top: 75%;
+  left: 42%;
+}
+>>>>>>> fdc1d95dbdf6fe511dfb0a3ece8c99ba931ca1a7
 /* Camera  */
 
 .video-container {

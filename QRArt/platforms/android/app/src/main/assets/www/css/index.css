@@ -29,6 +29,11 @@ li a:hover {
   background-color: #111;
 }
 
+.icons {
+  width: 50%; 
+  height: 50%;
+}
+
 /* Camera  */
 
 .video-container {

@@ -1,7 +1,9 @@
 ﻿class Application {
-  constructor(window, vuePrincipale, vueListeItem){
+  constructor(window, vuePrincipale, itemDAO, vueListeItem){
 
     this.window = window;
+    this.itemDAO = itemDAO;
+    this.vueListeItem = vueListeItem;
     // this.listeJeu = [{titre:"Metal Gear Solid", description:"Jeu d'infiltration", studio:"Konami",prix:"59",note:"10", id:0},
     //                     {titre:"Silent Hill", description:"Jeu Survival Horror", studio:"Konami",prix:"59",note:"8", id:1},
     //                     {titre:"Life Is Strage", description:"Jeu d'aventure graphique", studio:"Dontnod",prix:"59",note:"9", id:2}]
@@ -28,5 +30,5 @@
     }
   }
 
-new Application(window, new VuePrincipale(), new VueListeItem());
+new Application(window, new VuePrincipale(), new ItemDAO(), new VueListeItem());
 

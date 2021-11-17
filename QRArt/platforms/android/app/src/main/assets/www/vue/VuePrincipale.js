@@ -7,7 +7,7 @@ class VuePrincipale{
     this.htmlMenu = document.getElementById("html-vue-menu").innerHTML; //implémenter le menu dans la vue
     this.html = this.html.replace("{menu}", this.htmlMenu);
     //Setup du lecteur de QRcode
-    QrScanner.WORKER_PATH = '../lib/qr-scanner-worker.min.js';
+   // QrScanner.WORKER_PATH = '../lib/qr-scanner-worker.min.js';
   }
 
 

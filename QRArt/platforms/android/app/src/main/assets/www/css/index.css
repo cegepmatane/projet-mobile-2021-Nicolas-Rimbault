@@ -3,6 +3,7 @@ body{
   display: flex;
   flex-direction: column;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 ul {
   list-style-type: none;

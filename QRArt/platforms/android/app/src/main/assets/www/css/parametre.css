@@ -1,0 +1,28 @@
+.text-parametre{
+margin: 5%;
+}
+
+.bouton-parametre{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bouton-deconnection{
+    background-color: rgb(255, 51, 0);
+    color: rgb(80, 16, 0);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 40%;
+    height: 40px;
+}
+
+.bouton-cree{
+    background-color: lawngreen;
+    color: rgb(42, 83, 0);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 40%;
+    height: 40px;
+}

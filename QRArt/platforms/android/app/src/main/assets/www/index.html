@@ -8,9 +8,11 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/parametre.css">
 
         <script src="vue/VuePrincipale.js"></script>
         <script src="vue/VueListeItem.js"></script>
+        <script src="vue/VueParametre.js"></script>
         <script src="donnee/ItemDAO.js"></script>
         <script defer src="Application.js"></script>
         <title>Hello World</title>
@@ -54,9 +56,18 @@
         {menu}
       </script>
 
-      <script type="plain/text" id="html-vue-liste-item">
+      <script type="plain/text" id="html-vue-parametre">
         <div>
           <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="text-parametre">
+          <p>Nom d'utilisateur</p>
+          <p>Stat</p>
+          <p>Options</p>
+        </div>
+        <div class="bouton-parametre">
+          <button class="bouton-deconnection">Déconnexion</button>
+          <button class="bouton-cree">Créer</button>
         </div>
         {menu}
       </script>

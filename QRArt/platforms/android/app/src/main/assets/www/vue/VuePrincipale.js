@@ -18,16 +18,15 @@ class VuePrincipale{
 
     if(mobileCheck()){
       var constraints = navigator.mediaDevices.getSupportedConstraints();
-      alert(constraints);
 
       navigator.mediaDevices.getUserMedia({
           'video': {
               'facingMode': 'environment'
           }
       }).then(function(mediaStream) {
-          var mediaControl = document.querySelector('video');
-          mediaControl.srcObject = mediaStream;
-          mediaControl.src = URL.createObjectURL(mediaStream);
+          video.srcObject = mediaStream;
+          video.src = URL.createObjectURL(mediaStream);
+          video.play();
       });
     }else{
           console.log("TEST8");

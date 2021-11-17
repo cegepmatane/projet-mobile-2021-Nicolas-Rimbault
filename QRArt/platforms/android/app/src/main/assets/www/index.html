@@ -13,6 +13,7 @@
         <script src="donnee/ItemDAO.js"></script>
         <script src="vue/VuePrincipale.js"></script>
         <script src="vue/VueListeItem.js"></script>
+        <script src="vue/VueItem.js"></script>
         <script defer src="Application.js"></script>
         <title>Hello World</title>
     </head>
@@ -53,6 +54,17 @@
           </ul>
         </div>
         {menu}
+      </script>
+
+      <script type="plain/text" id="html-vue-item">
+        <div class="page">
+        <h1>Item</h1>
+        <h2 id="item-nom"></h2>
+        <p id="item-auteur"></p>
+        <p id="item-image"></p>
+        <p id="pate-date"></p>
+        <a href="#" class="action">Revenir &agrave; la liste</a>
+      </div>
       </script>
 
       <script type="plain/text" id="html-vue-liste-item">

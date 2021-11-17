@@ -18,9 +18,8 @@
     let hash = window.location.hash;
     if (!hash) {
       this.vuePrincipale.afficher();
-      this.vueListeItem.initialiserListeItem(this.itemDAO.lister());
-      this.vueListeItem.afficher();
     } else if (hash.match(/^#liste-item/)) {
+      this.vueListeItem.initialiserListeItem(this.itemDAO.lister());
       this.vueListeItem.afficher();
     } else if (hash.match(/^#parametre/)) {
       this.vueParametre.afficher();

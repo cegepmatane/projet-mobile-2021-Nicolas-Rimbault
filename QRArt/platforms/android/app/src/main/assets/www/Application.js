@@ -1,5 +1,5 @@
 ﻿class Application {
-  constructor(window, vuePrincipale, itemDAO, vueListeItem){
+  constructor(window, vuePrincipale, itemDAO, vueListeItem) {
 
     this.window = window;
     this.itemDAO = itemDAO;
@@ -15,20 +15,21 @@
     console.log("Chargement");
 
     // C'est l'équivalent de function(){this.naviguer()}
-    this.window.addEventListener("hashchange", () =>this.naviguer());
+    this.window.addEventListener("hashchange", () => this.naviguer());
 
     this.naviguer();
   }
 
-  naviguer(){
+  naviguer() {
     let hash = window.location.hash;
-    if(!hash){
+    if (!hash) {
       this.vuePrincipale.afficher();
-    }
-    else if(hash.match(/^#liste-item/))
-      this.vueListeItem.afficher()
+    } else if (hash.match(/^#liste-item/)) {
+      this.vueListeItem.afficher();
+    } else if (hash.match(/^#parametre/)) {
+      this.vueParametre.afficher();
     }
   }
+}
 
 new Application(window, new VuePrincipale(), new ItemDAO(), new VueListeItem());
-

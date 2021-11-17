@@ -2,6 +2,9 @@ class VueListeItem {
     constructor(){
         this.html = document.getElementById("html-vue-liste-item").innerHTML;
         this.listeItemDonnee = null;
+
+        this.htmlMenu = document.getElementById("html-vue-menu").innerHTML; //implémenter le menu dans la vue
+    this.html = this.html.replace("{menu}", this.htmlMenu);
     }
 
     initialiserListeItem(listeItemDonnee) {

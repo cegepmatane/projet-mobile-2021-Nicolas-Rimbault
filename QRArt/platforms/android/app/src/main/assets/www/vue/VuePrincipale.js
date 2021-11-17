@@ -1,10 +1,13 @@
+
 class VuePrincipale{
   constructor(){
     this.html = document.getElementById("html-vue-principale").innerHTML;
-
+    // import QrScanner from '../lib/qr-scanner.min.js';
     
     this.htmlMenu = document.getElementById("html-vue-menu").innerHTML; //implémenter le menu dans la vue
     this.html = this.html.replace("{menu}", this.htmlMenu);
+    //Setup du lecteur de QRcode
+   // QrScanner.WORKER_PATH = '../lib/qr-scanner-worker.min.js';
   }
 
 
@@ -27,6 +30,8 @@ class VuePrincipale{
           video.srcObject = mediaStream;
           video.src = URL.createObjectURL(mediaStream);
           video.play();
+          const qrScanner = new QrScanner(video, result => console.log('decoded qr code:', result));
+          
       });
     }else{
           console.log("TEST8");

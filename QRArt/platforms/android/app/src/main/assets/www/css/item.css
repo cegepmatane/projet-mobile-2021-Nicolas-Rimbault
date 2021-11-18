@@ -35,5 +35,5 @@ a{
 .div-liste-item{
     display: flex;
     justify-content: center;
-    margin-bottom: 15%;
+    margin-bottom: 100px;
 }

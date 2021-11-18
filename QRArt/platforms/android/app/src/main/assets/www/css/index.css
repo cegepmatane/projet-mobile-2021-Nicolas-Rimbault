@@ -18,12 +18,12 @@ body{
 }
 .menu ul {
   list-style-type: none;
-  margin-top: auto;
-  padding: 0; 
+  padding: 0px; 
   overflow: hidden;
+  width: 101%;
   background-color: rgb(24, 24, 24);
   display: flex;
-  justify-content: space-around;
+  margin: -1px;
   position: fixed;
   bottom:1px;
 }

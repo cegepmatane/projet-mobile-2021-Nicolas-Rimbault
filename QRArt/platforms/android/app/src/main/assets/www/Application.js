@@ -35,6 +35,8 @@
       this.vueInscription.afficher();
     } else if (hash.match(/^#connexion/)) {
       this.vueConnexion.afficher();
+    }else if (hash.match(/^#creation/)) {
+      this.vueCreation.afficher();
     } else {
       let navigation = hash.match(/^#item\/([0-9]+)/);
       let idItem = navigation[1];

@@ -21,7 +21,7 @@
         <script src="vue/VueInscription.js"></script>
         <script src="vue/VueCreation.js"></script>
         <script src="vue/VueReussite.js"></script>
-        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <script type="text/javascript" src="cordova.js"></script>
         <script src="donnee/ItemDAO.js"></script>
         <script defer src="Application.js"></script>
         <title>Hello World</title>
@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="bouton-parametre">
-          <a href="#inscription" class="bouton-deconnection">Déconnexion</a>
+          <a href="#creation" class="bouton-deconnection">Déconnexion</a>
           <a href="#connexion" class="bouton-cree">Créer</a>
         </div>
         {menu}
@@ -152,6 +152,16 @@
       <div>
         <img src="img/logo.png" alt="logo" class="logo">
       </div>
+      <form action="" class="formulaire-connexion-inscription">
+        <div>
+          <label for="">Titre</label>
+          <input type="text">
+        </div>
+        <div>
+          <label for="">Image</label>
+          <input type="image">
+        </div>
+      </form>
       {menu}
     </script>
 

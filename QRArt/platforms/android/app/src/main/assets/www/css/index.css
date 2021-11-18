@@ -16,7 +16,7 @@ body{
   -webkit-tap-highlight-color: transparent;
   font-family: 'Quicksand', sans-serif;
 }
-ul {
+.menu ul {
   list-style-type: none;
   margin-top: auto;
   padding: 0; 
@@ -24,13 +24,15 @@ ul {
   background-color: rgb(24, 24, 24);
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  bottom:1px;
 }
 
-li {
+.menu li {
   float: left;
 }
 
-li a {
+.menu li a {
   display: block;
   color: white;
   text-align: center;
@@ -38,7 +40,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.menu li a:hover {
   background-color: #111;
 }
 

@@ -1,11 +1,16 @@
 ﻿class Application {
-  constructor(window, vuePrincipale, itemDAO, vueListeItem, vueParametre, vueItem) {
+  constructor(window, vuePrincipale, itemDAO, vueListeItem, vueParametre, vueItem, vueConnexion, vueInscription, vueCreation, vueReussite) {
 
     this.window = window;
     this.itemDAO = itemDAO;
     this.vueListeItem = vueListeItem;
     this.vuePrincipale = vuePrincipale;
     this.vueItem = vueItem;
+    this.vueParametre = vueParametre;
+    this.vueConnexion = vueConnexion;
+    this.vueInscription = vueInscription;
+    this.vueCreation = vueCreation;
+    this.vueReussite = vueReussite;
 
     console.log("Chargement");
 
@@ -24,6 +29,10 @@
       this.vueListeItem.afficher();
     } else if (hash.match(/^#parametre/)) {
       this.vueParametre.afficher();
+    } else if (hash.match(/^#reussite/)) {
+      this.vueReussite.afficher();
+    }else if (hash.match(/^#inscription/)) {
+      this.vueInscription.afficher();
     } else {
       let navigation = hash.match(/^#item\/([0-9]+)/);
       let idItem = navigation[1];
@@ -34,4 +43,4 @@
   }
 }
 
-new Application(window, new VuePrincipale(), new ItemDAO(), new VueListeItem(), new vueParametre(), new VueItem());
+new Application(window, new VuePrincipale(), new ItemDAO(), new VueListeItem(), new vueParametre(), new VueItem(), new vueInscription(), new vueConnexion(), new vueCreation(), new vueReussite());

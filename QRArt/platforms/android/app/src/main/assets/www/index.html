@@ -9,23 +9,24 @@
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/parametre.css">
+        <link rel="stylesheet" href="css/reussite.css">
 
         <script src="modele/Item.js"></script>
         <script src="donnee/ItemDAO.js"></script>
         <script src="vue/VuePrincipale.js"></script>
         <script src="vue/VueListeItem.js"></script>
-<<<<<<< HEAD
         <script src="vue/VueParametre.js"></script>
-        <script src="donnee/ItemDAO.js"></script>
-=======
         <script src="vue/VueItem.js"></script>
->>>>>>> 0a78d616c429b6e2de995c1a17436af02e5f2d54
+        <script src="vue/VueConnexion.js"></script>
+        <script src="vue/VueInscription.js"></script>
+        <script src="vue/VueCreation.js"></script>
+        <script src="vue/VueReussite.js"></script>
+        <script src="donnee/ItemDAO.js"></script>
         <script defer src="Application.js"></script>
         <title>Hello World</title>
     </head>
     <body>
-    <div id="page-chargement-application">Chargement de l'application liste de jeux</div>4
-
+    <div id="page-chargement-application">Chargement de l'application liste de jeux</div>
 
     <script type="plain/text" id="html-vue-principale">
         <div class="video-container">
@@ -37,7 +38,7 @@
           </div>
         </div>
         <div class="bouton_photo_div">
-          <a class="bouton_photo" href="#home"><img src="img/icons/icons-cercle.png" width="100" height="100">
+          <a class="bouton_photo" href="#reussite"><img src="img/icons/icons-cercle.png" width="100" height="100">
             </a></div>
         {menu}
     </script>
@@ -76,16 +77,20 @@
 
       <script type="plain/text" id="html-vue-parametre">
         <div>
-          <img src="img/logo.png" alt="logo">
+          <img src="img/logo.png" alt="logo" class="logo">
         </div>
         <div class="text-parametre">
-          <p>Nom d'utilisateur</p>
+          <p>$Nom d'utilisateur$</p>
           <p>Stat</p>
-          <p>Options</p>
+          <p>Options : </p>
+          <div class="option-musique">
+            <img src="img/icons/icons-notes-de-musique.png" alt="note-de-musique" class="icons-musique">
+            <input type="range" min="1" max="100" value="50" class="slider" id="slider">
+          </div>
         </div>
         <div class="bouton-parametre">
-          <button class="bouton-deconnection">Déconnexion</button>
-          <button class="bouton-cree">Créer</button>
+          <a href="#inscription" class="bouton-deconnection">Déconnexion</a>
+          <a class="bouton-cree">Créer</a>
         </div>
         {menu}
       </script>
@@ -93,5 +98,70 @@
         import QrScanner from 'qr-scanner';
         // do something with QrScanner
     </script> -->
+    <script type="plain/text" id="html-vue-connexion">
+      <div>
+        <img src="img/logo.png" alt="logo" class="logo">
+      </div>
+      <div class="formulaire">
+        <form action="">
+          <div class="champ">
+            <label for="">nom d'utilisateur</label>
+            <input type="text" id=nom>
+          </div>
+          <div class="champ">
+            <label for="">mot de passe</label>
+            <input type="password" id=nom>
+          </div>
+          <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
+        </form>
+      </div>
+      {menu}
+    </script>
+
+    <script type="plain/text" id="html-vue-inscription">
+      <div>
+        <img src="img/logo.png" alt="logo" class="logo">
+      </div>
+      <div class="formulaire">
+        <form action="">
+          <div class="champ">
+            <label for="">nom d'utilisateur</label>
+            <input type="text" id=nom>
+          </div>
+          <div class="champ">
+            <label for="">mot de passe</label>
+            <input type="password" id=nom>
+          </div>
+          <div class="champ">
+            <label for="">confirner mdp</label>
+            <input type="password" id=nom>
+          </div>
+          <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
+        </form>
+      </div>
+      {menu}
+    </script>
+
+    <script type="plain/text" id="html-vue-creation">
+      <div>
+        <img src="img/logo.png" alt="logo" class="logo">
+      </div>
+      {menu}
+    </script>
+
+    <script type="plain/text" id="html-vue-reussite">
+      <div>
+        <img src="img/logo.png" alt="logo" class="logo">
+      </div>
+      <div >
+        <div class="reussite-flex">
+          <img src="img/perroquet-pixel-art.png" alt="perroquet" class="reussite-image">
+        </div>
+        <div class="reussite-flex">
+          <button class="reussite-bouton">Ajouter</button>
+        </div>
+      </div>
+      {menu}
+    </script>
     </body>
 </html>

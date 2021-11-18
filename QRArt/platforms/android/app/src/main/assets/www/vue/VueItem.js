@@ -4,7 +4,7 @@ class VueItem {
         this.item = null;
     }
 
-    initialiseItem(item) {
+    initialiserItem(item) {
         this.item = item;
     }
 

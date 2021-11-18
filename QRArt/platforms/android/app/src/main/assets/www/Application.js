@@ -31,8 +31,10 @@
       this.vueParametre.afficher();
     } else if (hash.match(/^#reussite/)) {
       this.vueReussite.afficher();
-    }else if (hash.match(/^#inscription/)) {
+    } else if (hash.match(/^#inscription/)) {
       this.vueInscription.afficher();
+    } else if (hash.match(/^#connexion/)) {
+      this.vueConnexion.afficher();
     } else {
       let navigation = hash.match(/^#item\/([0-9]+)/);
       let idItem = navigation[1];
@@ -43,4 +45,4 @@
   }
 }
 
-new Application(window, new VuePrincipale(), new ItemDAO(), new VueListeItem(), new vueParametre(), new VueItem(), new vueInscription(), new vueConnexion(), new vueCreation(), new vueReussite());
+new Application(window, new VuePrincipale(), new ItemDAO(), new VueListeItem(), new vueParametre(), new VueItem(), new vueConnexion(), new vueInscription(), new vueCreation(), new vueReussite());

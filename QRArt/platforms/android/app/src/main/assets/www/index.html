@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/parametre.css">
         <link rel="stylesheet" href="css/reussite.css">
+        <link rel="stylesheet" href="css/connexion-inscription.css">
 
         <script src="modele/Item.js"></script>
         <script src="vue/VuePrincipale.js"></script>
@@ -90,7 +91,7 @@
         </div>
         <div class="bouton-parametre">
           <a href="#inscription" class="bouton-deconnection">Déconnexion</a>
-          <a class="bouton-cree">Créer</a>
+          <a href="#connexion" class="bouton-cree">Créer</a>
         </div>
         {menu}
       </script>
@@ -102,19 +103,21 @@
       <div>
         <img src="img/logo.png" alt="logo" class="logo">
       </div>
-      <div class="formulaire">
-        <form action="">
-          <div class="champ">
-            <label for="">nom d'utilisateur</label>
-            <input type="text" id=nom>
-          </div>
-          <div class="champ">
-            <label for="">mot de passe</label>
-            <input type="password" id=nom>
-          </div>
-          <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
-        </form>
-      </div>
+        <div class="formulaire-connexion-inscription">
+          <form action="">
+            <div class="champ-connextion-inscription">
+              <label for="" class="nom-utilisateur">Nom d'utilisateur  </label>
+              <input type="text" id="nom" class="saisit">
+            </div>
+            <div class="champ-connextion-inscription">
+              <label for="">Mot de passe</label>
+              <input type="password" id="motDePasse" class="saisit">
+            </div>
+            <div class="div-bouton-enregistrer-connexion-inscription">
+              <a class="bouton-enregistrer-connexion-inscription" href="">Connexion</a>
+            </div>
+          </form>
+        </div>
       {menu}
     </script>
 
@@ -122,21 +125,23 @@
       <div>
         <img src="img/logo.png" alt="logo" class="logo">
       </div>
-      <div class="formulaire">
+      <div class="formulaire-connexion-inscription">
         <form action="">
-          <div class="champ">
-            <label for="">nom d'utilisateur</label>
-            <input type="text" id=nom>
+          <div class="champ-connextion-inscription">
+            <label for="" class="nom-utilisateur">Nom d'utilisateur</label>
+            <input type="text" id="nom" class="saisit">
           </div>
-          <div class="champ">
-            <label for="">mot de passe</label>
-            <input type="password" id=nom>
+          <div class="champ-connextion-inscription">
+            <label for="">Mot de passe</label>
+            <input type="password" id="motDePasse" class="saisit">
           </div>
-          <div class="champ">
-            <label for="">confirner mdp</label>
-            <input type="password" id=nom>
+          <div class="champ-connextion-inscription">
+            <label for="">Confirmer mdp</label>
+            <input type="password" id="confirmMotDePasse" class="saisit">
           </div>
-          <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
+          <div class="div-bouton-enregistrer-connexion-inscription">
+            <a class="bouton-enregistrer-connexion-inscription" href="">Enregistrer</a>
+          </div>
         </form>
       </div>
       {menu}

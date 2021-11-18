@@ -1,0 +1,39 @@
+.boite-item{
+    background-color: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 100%;
+    text-align: center; 
+    width: 100px;
+    min-height: 120px;
+    max-height: auto;
+    margin-bottom: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.boite-item img{
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+.div-liste-item ul{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+}
+
+.div-liste-item{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15%;
+}

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/parametre.css">
         <link rel="stylesheet" href="css/reussite.css">
         <link rel="stylesheet" href="css/formulaire.css">
+        <link rel="stylesheet" href="css/item.css">
 
         <script src="modele/Item.js"></script>
         <script src="vue/VuePrincipale.js"></script>
@@ -55,12 +56,22 @@
     </script>
 
     <script type="plain/text" id="html-vue-liste-item">
-        <div class="page">
+        <div>
           <h1>Liste des Items</h1>
-          <ul id="liste-item">
-            <li><a href="#item/{Item.id}" class="liste-item">{Item.nom}</a>
-            </li>
-          </ul>
+          <div class="div-liste-item">
+            <ul id="liste-item">
+              <li>
+                  
+                    <a href="#item/{Item.id}">
+                      <div class="boite-item">
+                        <img src="img\perroquet-pixel-art.png" alt="perroquet">
+                        {Item.nom}
+                      </div>
+                    </a>
+                  
+              </li>
+            </ul>
+          </div>
         </div>
         {menu}
       </script>

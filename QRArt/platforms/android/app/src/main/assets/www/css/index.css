@@ -25,7 +25,7 @@ body{
   display: flex;
   margin: -1px;
   position: fixed;
-  bottom:1px;
+  bottom: 1px;
 }
 
 .menu li {

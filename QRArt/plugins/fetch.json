@@ -22,5 +22,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-qrscanner": {
+    "source": {
+      "type": "registry",
+      "id": "git+https://github.com/bitpay/cordova-plugin-qrscanner.git"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

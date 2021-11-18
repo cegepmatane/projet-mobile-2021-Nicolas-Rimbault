@@ -538,6 +538,7 @@ define("cordova/builder", function(require, exports, module) {
 
 var utils = require('cordova/utils');
 
+
 function each (objects, func, context) {
     for (var prop in objects) {
         if (Object.prototype.hasOwnProperty.call(objects, prop)) {

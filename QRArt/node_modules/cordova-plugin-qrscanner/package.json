@@ -1,25 +1,28 @@
 {
-  "_from": "git+https://github.com/bitpay/cordova-plugin-qrscanner.git",
+  "_from": "cordova-plugin-qrscanner",
   "_id": "cordova-plugin-qrscanner@3.0.1",
   "_inBundle": false,
-  "_integrity": "",
+  "_integrity": "sha512-xrwOP3nD+VmRSiV0w7chZ5PLw2YwpI9vtLdeoGNYLLzmmjjYbyIof+x9vOEOgjtwrg9S61rukmOZhQAmkzaosA==",
   "_location": "/cordova-plugin-qrscanner",
   "_phantomChildren": {},
   "_requested": {
-    "type": "git",
-    "raw": "git+https://github.com/bitpay/cordova-plugin-qrscanner.git",
-    "rawSpec": "git+https://github.com/bitpay/cordova-plugin-qrscanner.git",
-    "saveSpec": "git+https://github.com/bitpay/cordova-plugin-qrscanner.git",
-    "fetchSpec": "https://github.com/bitpay/cordova-plugin-qrscanner.git",
-    "gitCommittish": null
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-qrscanner",
+    "name": "cordova-plugin-qrscanner",
+    "escapedName": "cordova-plugin-qrscanner",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
     "#DEV:/",
     "#USER"
   ],
-  "_resolved": "git+https://github.com/bitpay/cordova-plugin-qrscanner.git#b62efb64801ba0b830f0aac556935c0978d2fb98",
-  "_spec": "git+https://github.com/bitpay/cordova-plugin-qrscanner.git",
-  "_where": "C:\\Users\\1931553\\Documents\\GitHub\\projet-mobile-2021-Nicolas-Rimbault\\QRArt",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-qrscanner/-/cordova-plugin-qrscanner-3.0.1.tgz",
+  "_shasum": "34af2ede5ce857ee9b4d75936e2916fead238545",
+  "_spec": "cordova-plugin-qrscanner",
+  "_where": "C:\\Users\\1931553\\Documents\\qrart",
   "author": {
     "name": "Jason Dreyzehner"
   },

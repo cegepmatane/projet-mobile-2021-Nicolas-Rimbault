@@ -1,28 +1,39 @@
-.formulaire-connexion-inscription{
+.formulaire{
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 25%;
 }
 
-.champ-connextion-inscription{
+.champ-formulaire{
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
     font-size: 20px;
 }
 
-label.nom-utilisateur{
+.champ-formulaire label{
     margin-right: 10px;
 }
 
 .saisit{
-    border: none;
+    border: solid rgb(116, 116, 116) 2px;
     border-radius: 5px;
     height: 30px;
 }
 
-.bouton-enregistrer-connexion-inscription{
+.envoie-image{
+    background-color: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.bouton-valider{
     background-color: rgb(46, 46, 46);
     color: rgb(255, 255, 255);
     border-style: none;
@@ -34,6 +45,6 @@ label.nom-utilisateur{
     margin-top: 200px;
 }
 
-.div-bouton-enregistrer-connexion-inscription{
+.div-bouton-valider{
     margin-top: 70px;
 }

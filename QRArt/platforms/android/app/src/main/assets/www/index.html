@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/parametre.css">
         <link rel="stylesheet" href="css/reussite.css">
-        <link rel="stylesheet" href="css/connexion-inscription.css">
+        <link rel="stylesheet" href="css/formulaire.css">
 
         <script src="modele/Item.js"></script>
         <script src="vue/VuePrincipale.js"></script>
@@ -21,7 +21,7 @@
         <script src="vue/VueInscription.js"></script>
         <script src="vue/VueCreation.js"></script>
         <script src="vue/VueReussite.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
         <script src="donnee/ItemDAO.js"></script>
         <script defer src="Application.js"></script>
         <title>Hello World</title>
@@ -104,18 +104,18 @@
       <div>
         <img src="img/logo.png" alt="logo" class="logo">
       </div>
-        <div class="formulaire-connexion-inscription">
+        <div class="formulaire">
           <form action="">
-            <div class="champ-connextion-inscription">
-              <label for="" class="nom-utilisateur">Nom d'utilisateur  </label>
+            <div class="champ-formulaire">
+              <label for="">Nom d'utilisateur  </label>
               <input type="text" id="nom" class="saisit">
             </div>
-            <div class="champ-connextion-inscription">
+            <div class="champ-formulaire">
               <label for="">Mot de passe</label>
               <input type="password" id="motDePasse" class="saisit">
             </div>
-            <div class="div-bouton-enregistrer-connexion-inscription">
-              <a class="bouton-enregistrer-connexion-inscription" href="">Connexion</a>
+            <div class="div-bouton-valider">
+              <a class="bouton-valider" href="">Connexion</a>
             </div>
           </form>
         </div>
@@ -126,22 +126,22 @@
       <div>
         <img src="img/logo.png" alt="logo" class="logo">
       </div>
-      <div class="formulaire-connexion-inscription">
+      <div class="formulaire">
         <form action="">
-          <div class="champ-connextion-inscription">
-            <label for="" class="nom-utilisateur">Nom d'utilisateur</label>
+          <div class="champ-formulaire">
+            <label for="">Nom d'utilisateur</label>
             <input type="text" id="nom" class="saisit">
           </div>
-          <div class="champ-connextion-inscription">
+          <div class="champ-formulaire">
             <label for="">Mot de passe</label>
             <input type="password" id="motDePasse" class="saisit">
           </div>
-          <div class="champ-connextion-inscription">
+          <div class="champ-formulaire">
             <label for="">Confirmer mdp</label>
             <input type="password" id="confirmMotDePasse" class="saisit">
           </div>
-          <div class="div-bouton-enregistrer-connexion-inscription">
-            <a class="bouton-enregistrer-connexion-inscription" href="">Enregistrer</a>
+          <div class="div-bouton-valider">
+            <a class="bouton-valider" href="">Enregistrer</a>
           </div>
         </form>
       </div>
@@ -152,16 +152,21 @@
       <div>
         <img src="img/logo.png" alt="logo" class="logo">
       </div>
-      <form action="" class="formulaire-connexion-inscription">
-        <div>
-          <label for="">Titre</label>
-          <input type="text">
+      <div class="formulaire">
+        <form action="" >
+          <div class="champ-formulaire">
+            <label for="">Titre</label>
+            <input type="text" class="saisit">
+          </div>
+          <div class="champ-formulaire">
+            <label for="">Image</label>
+            <input type="image" class="envoie-image" value="importer une image">
+          </div>
+          <div class="div-bouton-valider">
+            <a class="bouton-valider" href="">Ajouter</a>
+          </div>
+        </form>
         </div>
-        <div>
-          <label for="">Image</label>
-          <input type="image">
-        </div>
-      </form>
       {menu}
     </script>
 

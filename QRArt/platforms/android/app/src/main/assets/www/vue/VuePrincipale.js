@@ -13,6 +13,30 @@ class VuePrincipale{
   afficher(){
     document.getElementsByTagName("body")[0].innerHTML = this.html;
     
+    function onDeviceReady() {
+      console.log('Device Ready');
+      alert("Device Ready");
+
+        // Now safe to use device APIs
+        var done = function(err, status){
+          if(err){
+            console.error(err._message);
+            console.log('QRScanner Echec');
+            alert("test1");
+  
+  
+          } else {
+            console.log('QRScanner is initialized. Status:');
+            console.log(status);
+            alert("test2");
+
+  
+          }
+        };
+  
+        window.QRScanner.prepare(done);
+    }
+    document.addEventListener("deviceready", onDeviceReady, false);
 
     // Grab elements, create settings, etc.
     var video = document.getElementById('video');
@@ -20,6 +44,7 @@ class VuePrincipale{
 
     if(mobileCheck()){
       var constraints = navigator.mediaDevices.getSupportedConstraints();
+
 
       navigator.mediaDevices.getUserMedia({
           'video': {
@@ -29,8 +54,6 @@ class VuePrincipale{
           video.srcObject = mediaStream;
           video.src = URL.createObjectURL(mediaStream);
           video.play();
-          const qrScanner = new QrScanner(video, result => console.log('decoded qr code:', result));
-          
       });
     }else{
           console.log("TEST8");
@@ -44,6 +67,9 @@ class VuePrincipale{
             video.play();
         });
       }
+      //window.QRScanner.prepare(onDone);
+
+     
     }
 
     function mobileCheck() {

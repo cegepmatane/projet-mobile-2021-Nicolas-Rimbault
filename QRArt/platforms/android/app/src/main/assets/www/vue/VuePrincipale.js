@@ -13,11 +13,6 @@ class VuePrincipale{
 
   afficher(){
     document.getElementsByTagName("body")[0].innerHTML = this.html;
-        alert("test1");
-
-    QrScanner.WORKER_PATH = '../lib/qr-scanner-worker.min.js';
-
-    alert("test");
     // Grab elements, create settings, etc.
     var video = document.getElementById('video');
 

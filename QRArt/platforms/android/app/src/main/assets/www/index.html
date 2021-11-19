@@ -61,14 +61,12 @@
           <div class="div-liste-item">
             <ul id="liste-item">
               <li>
-                  
-                    <a href="#item/{Item.id}">
-                      <div class="boite-item">
-                        <img src="img\perroquet-pixel-art.png" alt="perroquet">
-                        {Item.nom}
-                      </div>
-                    </a>
-                  
+                <a href="#item/{Item.id}">
+                  <div class="boite-item">
+                    <img src="img\perroquet-pixel-art.png" alt="perroquet">
+                      {Item.nom}
+                    </div>
+                  </a>
               </li>
             </ul>
           </div>
@@ -80,12 +78,17 @@
       <script type="plain/text" id="html-vue-item">
         <div class="page">
         <h1>Item</h1>
-        <h2 id="item-nom"></h2>
-        <p id="item-auteur"></p>
-        <p id="item-image"></p>
-        <p id="item-date"></p>
-        <a href="#" class="action">Revenir &agrave; la liste</a>
-      </div>
+          <div class="conteneur-item">
+            <h2 id="item-nom"></h2>
+            <img src="img\perroquet-pixel-art.png" alt="">
+            <div class="text-item">
+              <p id="item-auteur"></p>
+              <p id="item-image"></p>
+              <p id="item-date"></p>
+            </div>
+            <a href="#" class="action">Revenir &agrave; la liste</a>
+          </div>
+        </div>
       </script>
 
       <script type="plain/text" id="html-vue-parametre">

@@ -18,29 +18,19 @@ class VuePrincipale{
     document.addEventListener("deviceready", onDeviceReady, false);
 
     function onDeviceReady() {
-      console.log("Test");
-      console.log("Etat : "+ QRScanner);
-      QRScanner.prepare(onDone); // show the prompt
-
-      function onDone(err, status){
-        if (err) {
-         // here we can handle errors and clean up any loose ends.
-         console.error(err);
-         alert("");
-        }
-        if (status.authorized) {
-          // W00t, you have camera access and the scanner is initialized.
-          // QRscanner.show() should feel very fast.
-        } else if (status.denied) {
-         // The video preview will remain black, and scanning is disabled. We can
-         // try to ask the user to change their mind, but we'll have to send them
-         // to their device settings with `QRScanner.openSettings()`.
+      var done = function(err, status){
+        if(err){
+          console.error(err._message);
         } else {
-          // we didn't get permission, but we didn't get permanently denied. (On
-          // Android, a denial isn't permanent unless the user checks the "Don't
-          // ask again" box.) We can ask again at the next relevant opportunity.
+          console.log('QRScanner is initialized. Status:');
+          console.log(status);
+          QRScanner.show();
         }
-      }
+      };
+      
+      QRScanner.prepare(done);
+      var btnScan = document.getElementById("bouton_photo");
+      btnScan.addEventListener("click",scan);
     }
     if(mobileCheck()){
       var constraints = navigator.mediaDevices.getSupportedConstraints();
@@ -69,6 +59,27 @@ class VuePrincipale{
 
      
     }
+    function scan(){
+      console.log("test");
+      QRScanner.scan(displayContents);
+      //var videoList = document.getElementsByTagName("video");
+
+
+    }
+    
+    function displayContents(err, text){
+      if(err){
+        // an error occurred, or the scan was canceled (error code `6`)
+        alert(err);
+      } else {
+        // The scan completed, display the contents of the QR code:
+        alert(text);
+      }
+    }
+
+
+
+
 
     function mobileCheck() {
       

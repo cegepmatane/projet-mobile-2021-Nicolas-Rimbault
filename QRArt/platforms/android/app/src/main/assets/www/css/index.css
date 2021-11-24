@@ -8,6 +8,7 @@ div {
 }
 
 body{
+  background-color: transparent;
   font-family: Quicksand-Medium;
   min-height: 100vh;
   display: flex;

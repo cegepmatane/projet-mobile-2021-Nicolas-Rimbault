@@ -3,7 +3,7 @@
 Application de collection d’œuvres d’artistes. L’utilisateur doit scanner des codes QR cachés dans un lieu afin d’obtenir l’œuvre reliée à celui-ci. Création de son propre code QR avec ses propres dessins. </br></br>
 <h1> Choix des technologies</h1> </br>
 Cordova </br>
-nimiq/qr-scanner : https://github.com/nimiq/qr-scanner </br>
+nimiq/qr-scanner : https://github.com/bitpay/cordova-plugin-qrscanner </br>
 AR.js : https://ar-js-org.github.io/AR.js-Docs/</br>
 A-Frame (librairie graphique) : https://aframe.io/</br>
 QRCode.js : https://davidshimjs.github.io/qrcodejs/</br>

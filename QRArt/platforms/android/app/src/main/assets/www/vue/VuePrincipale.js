@@ -61,7 +61,13 @@ class VuePrincipale{
     }
     function scan(){
       console.log("test");
-      QRScanner.scan(displayContents);
+      var isTrue = QRScanner.scan(displayContents);
+      var checkFaill = 0;
+      while(!isTrue && checkFaill <=20){
+        console.log("Nombre essait : "+checkFaill);
+        isTrue = QRScanner.scan(displayContents);
+        checkFaill++;
+      }
       //var videoList = document.getElementsByTagName("video");
 
 
@@ -74,7 +80,9 @@ class VuePrincipale{
       } else {
         // The scan completed, display the contents of the QR code:
         alert(text);
+        return true;
       }
+      return false;
     }
 
 

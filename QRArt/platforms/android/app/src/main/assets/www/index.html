@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="bouton_photo_div">
-          <a class="bouton_photo" href="#reussite"><img src="img/icons/icons-cercle.png" width="100" height="100">
+          <a class="bouton_photo" id="bouton_photo" href="#"><img src="img/icons/icons-cercle.png" width="100" height="100">
             </a></div>
           </div>
         </div>
@@ -181,10 +181,10 @@
           </div>
           <div class="champ-formulaire">
             <label for="">Image</label>
-            <input type="image" class="envoie-image" id="image-creation" value="importer une image">
+            <input type="file" class="envoie-image" value="importer une image">
           </div>
           <div class="div-bouton-valider">
-            <a class="bouton-valider" href="#parametre">Ajouter</a>
+            <a class="bouton-valider" id="bouton-valider" href="#">Ajouter</a>
           </div>
         </form>
         </div>
@@ -205,6 +205,6 @@
       </div>
       {menu}
     </script>
-</body>
-
+    <script type="text/javascript" src="cordova.js"></script>
+    </body>
 </html>

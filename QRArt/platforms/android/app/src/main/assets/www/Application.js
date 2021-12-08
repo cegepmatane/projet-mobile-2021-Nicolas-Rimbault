@@ -23,11 +23,13 @@
   naviguer() {
     let hash = window.location.hash;
     if (!hash) {
+      document.body.style.backgroundColor= "transparent";
       this.vuePrincipale.afficher();
     } else if (hash.match(/^#liste-item/)) {
       this.vueListeItem.initialiserListeItem(this.itemDAO.lister());
       this.vueListeItem.afficher();
     } else if (hash.match(/^#parametre/)) {
+      document.body.style.backgroundColor = "black";
       this.vueParametre.afficher();
     } else if (hash.match(/^#reussite/)) {
       this.vueReussite.afficher();
@@ -36,6 +38,7 @@
     } else if (hash.match(/^#connexion/)) {
       this.vueConnexion.afficher();
     }else if (hash.match(/^#creation/)) {
+      document.body.style.backgroundColor = "black";
       this.vueCreation.afficher();
     } else {
       let navigation = hash.match(/^#item\/([0-9]+)/);

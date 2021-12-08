@@ -1,0 +1,3 @@
+class traitementAjouterItem {
+    function 
+}

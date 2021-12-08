@@ -16,7 +16,7 @@
 
     // C'est l'équivalent de function(){this.naviguer()}
     this.window.addEventListener("hashchange", () => this.naviguer());
-
+    
     this.naviguer();
   }
 
@@ -43,7 +43,12 @@
 
       this.vueItem.initialiserItem(this.itemDAO.lister()[idItem]);
       this.vueItem.afficher();
+
     }
+  }
+  actionAjouterItem(item){
+    this.ItemDAO.ajouter(item);
+    this.window.location.hash = "#";
   }
 }
 

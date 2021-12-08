@@ -11,4 +11,15 @@ class vueCreation{
         document.getElementsByTagName("body")[0].innerHTML = this.html;
     }
 
+    enregistrer(){
+      evenement.preventDefault();
+
+      let nom = document.getElementById("nom-creation").value;
+      let auteur = "admin";
+      let image = document.getElementById("image-creation").value;
+      
+      let date = Date.now();
+
+      this.actionAjouterItem(new Item(nom, auteur, image, date, null));
+    }
 }

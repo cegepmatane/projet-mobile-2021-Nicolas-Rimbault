@@ -25,4 +25,16 @@ class ItemDAO {
 
         return this.listeItem;
     }
+
+    ajouter(item){
+        if(this.listeItem.length > 0)
+        item.id = this.listeItem[this.listeItem.length-1].id + 1;
+    else
+    item.id = 0;
+
+    this.listeItem[item.id] = item;
+
+    localStorage['item'] = JSON.stringify(this.listeItem);
+    console.log("JSON.stringify(this.listeItem) : " + JSON.stringify(this.listeItem));
+    }
 }

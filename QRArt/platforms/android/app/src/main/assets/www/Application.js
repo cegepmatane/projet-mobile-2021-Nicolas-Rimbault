@@ -58,13 +58,17 @@ class Application {
   naviguer() {
     let hash = window.location.hash;
     if (!hash || hash.match(/^#principale/)) {
+      currentDirection = 1;
       document.body.style.backgroundColor= "transparent";
       this.vuePrincipale.afficher();
     } else if (hash.match(/^#liste-item/)) {
+      currentDirection = 0;
       document.body.style.backgroundColor = "black";
       this.vueListeItem.initialiserListeItem(this.itemDAO.lister());
       this.vueListeItem.afficher();
     } else if (hash.match(/^#parametre/)) {
+      currentDirection = 2;
+
       document.body.style.backgroundColor = "black";
       this.vueParametre.afficher();
     } else if (hash.match(/^#reussite/)) {

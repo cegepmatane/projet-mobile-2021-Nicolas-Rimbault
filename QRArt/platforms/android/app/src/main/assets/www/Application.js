@@ -1,4 +1,5 @@
-﻿
+﻿let currentScreen = 1;
+
 class Application {
   constructor(window, vuePrincipale, itemDAO, vueListeItem, vueParametre, vueItem, vueConnexion, vueInscription, vueCreation, vueReussite) {
 
@@ -12,7 +13,6 @@ class Application {
     this.vueInscription = vueInscription;
     this.vueCreation = vueCreation;
     this.vueReussite = vueReussite;
-    let currentScreen = 1;
 
     console.log("Chargement");
 
@@ -58,17 +58,16 @@ class Application {
   naviguer() {
     let hash = window.location.hash;
     if (!hash || hash.match(/^#principale/)) {
-      currentDirection = 1;
+      currentScreen = 1;
       document.body.style.backgroundColor= "transparent";
       this.vuePrincipale.afficher();
     } else if (hash.match(/^#liste-item/)) {
-      currentDirection = 0;
+      currentScreen = 0;
       document.body.style.backgroundColor = "black";
       this.vueListeItem.initialiserListeItem(this.itemDAO.lister());
       this.vueListeItem.afficher();
     } else if (hash.match(/^#parametre/)) {
-      currentDirection = 2;
-
+      currentScreen = 2;
       document.body.style.backgroundColor = "black";
       this.vueParametre.afficher();
     } else if (hash.match(/^#reussite/)) {

@@ -5,6 +5,7 @@ class vueCreation{
       
       this.htmlMenu = document.getElementById("html-vue-menu").innerHTML; //implémenter le menu dans la vue
       this.html = this.html.replace("{menu}", this.htmlMenu);
+
     }
 
     afficher() {
@@ -14,7 +15,7 @@ class vueCreation{
     }
 
     enregistrer(){
-      evenement.preventDefault();
+      //evenement.preventDefault();
 
       let nom = document.getElementById("nom-creation").value;
       let auteur = "admin";
@@ -38,9 +39,16 @@ function recupererDonner(){
   // };
   // console.log("Test ajout");
   // httpc.send("nom=Test&auteur=Romain&image=wow.png&date=2021-05-21");
+  let titre = document.getElementById("titre-creation").value;
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = mm + '/' + dd + '/' + yyyy; 
   const options = {
     method: 'post',
-    data: { nom: "Test", auteur: 'Romain',image:"wow.ngn", date:"2021-05-21" }
+    data: { nom: titre, auteur: 'Romain',image:"wow.ngn", date:today }
   };
   
   cordova.plugin.http.sendRequest('http://51.161.32.22/DevoirMobile/traitement-donner-qrart.php', options, function(response) {

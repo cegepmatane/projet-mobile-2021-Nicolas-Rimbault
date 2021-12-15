@@ -12,12 +12,17 @@ class VuePrincipale{
 
 
   afficher(){
+
     document.getElementsByTagName("body")[0].innerHTML = this.html;
+
+
     // Grab elements, create settings, etc.
     var video = document.getElementById('video');
     document.addEventListener("deviceready", onDeviceReady, false);
 
     function onDeviceReady() {
+
+      
       var done = function(err, status){
         if(err){
           console.error(err._message);
@@ -69,8 +74,6 @@ class VuePrincipale{
         checkFaill++;
       }
       //var videoList = document.getElementsByTagName("video");
-
-
     }
     
     function displayContents(err, text){

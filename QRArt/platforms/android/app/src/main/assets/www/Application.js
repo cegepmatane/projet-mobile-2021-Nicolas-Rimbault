@@ -21,13 +21,6 @@ class Application {
     
     this.naviguer();
 
-    this.parentTouchArea = document.getElementById('parent-toucharea')
-    this.touchArea = document.getElementById('toucharea')
-    this.myRegion = new ZingTouch.Region(this.parentTouchArea);
-
-    this.myRegion.bind(this.touchArea, 'swipe', function(e){
-      console.log(e.detail);
-    });
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
       var touchArea = document.getElementsByTagName("body")[0];

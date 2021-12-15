@@ -13,6 +13,17 @@ class vueCreation{
         btnCreation.addEventListener("click", recupererDonner);
     }
 
+    enregistrer(){
+      evenement.preventDefault();
+
+      let nom = document.getElementById("nom-creation").value;
+      let auteur = "admin";
+      let image = document.getElementById("image-creation").value;
+      
+      let date = Date.now();
+
+      this.actionAjouterItem(new Item(nom, auteur, image, date, null));
+    }
 }
 function recupererDonner(){
   // var httpc = new XMLHttpRequest(); // simplified for clarity

@@ -18,7 +18,7 @@ class Application {
 
     // C'est l'équivalent de function(){this.naviguer()}
     this.window.addEventListener("hashchange", () => this.naviguer());
-
+    
     this.naviguer();
 
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -82,7 +82,12 @@ class Application {
 
       this.vueItem.initialiserItem(this.itemDAO.lister()[idItem]);
       this.vueItem.afficher();
+
     }
+  }
+  actionAjouterItem(item){
+    this.ItemDAO.ajouter(item);
+    this.window.location.hash = "#";
   }
 }
 

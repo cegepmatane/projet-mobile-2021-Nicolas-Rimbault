@@ -18,13 +18,12 @@ QRCode.js : https://davidshimjs.github.io/qrcodejs/</br>
 Lorsqu'un QR code est scanné, le numéro du scan est envoyé à la base de données qui elle, renvoie les données de l'item lié au scan et affiche l'item sur l'écran.<br>
 <br>
 <h3>Échantillon de données</h3>
-Échantillon de données pour la récupération d'un item.<br>
-<code>
-{"item": {
-    "id": "1",
-    "nom": "BoDessin",
-    "artiste": "Sébastien",
-    "image": "bodessin.png",
-    "date": "2021-11-10"
-}}
-</code>
+Échantillon de données pour la récupération d'un item en XML.<br>
+
+QRArt<br />
+    &emsp; id 1<br />
+    &emsp; nomDuQRArt Pixel Perroquet<br />
+    &emsp; nomCreateur Nicolas Rimbault<br />
+    &emsp; image perroquet-pixel-art.png<br />
+    &emsp; date 2021.11.18<br />
+QRArt<br />

@@ -20,10 +20,10 @@ Lorsqu'un QR code est scanné, le numéro du scan est envoyé à la base de donn
 <h3>Échantillon de données</h3>
 Échantillon de données pour la récupération d'un item en XML.<br>
 
-QRArt</br>
-    id 1</br>
-    nomDuQRArt Pixel Perroquet</br>
-    nomCreateur Nicolas Rimbault</br>
-    image perroquet-pixel-art.png</br>
-    date 2021.11.18</br>
-QRArt</br>
+QRArt<br />
+    id 1<br />
+    nomDuQRArt Pixel Perroquet<br />
+    nomCreateur Nicolas Rimbault<br />
+    image perroquet-pixel-art.png<br />
+    date 2021.11.18<br />
+QRArt<br />

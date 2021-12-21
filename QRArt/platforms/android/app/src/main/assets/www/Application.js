@@ -23,8 +23,10 @@ class Application {
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
+    console.log("Device Ready");
       var touchArea = document.getElementsByTagName("body")[0];
-      var myRegion = new ZingTouch.Region(touchArea,undefined,false)
+      var myRegion = new ZingTouch.Region(touchArea,undefined,false);
+
       myRegion.bind(touchArea, 'swipe', function(e){
         if(90 < e.detail.data[0].currentDirection && e.detail.data[0].currentDirection < 270){
           console.log("Droite SWIPE");

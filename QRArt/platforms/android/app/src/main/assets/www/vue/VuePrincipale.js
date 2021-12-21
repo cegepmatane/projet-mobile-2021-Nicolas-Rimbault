@@ -88,6 +88,13 @@ class VuePrincipale{
       return false;
     }
 
+    function recupererImage() {
+      let id = document.getElementById("id").value;
+      const option = {
+        method: 'post',
+        data: {nom: id}
+      }
+    }
 
 
 

@@ -2,11 +2,7 @@ let liste = "";
 class ItemDAO {
     constructor(){
         this.listeItem = [
-            {nom:"Spaghetti", auteur:"Longues", image:"Semoule", date:"8 - 9 minutes", id:0},
-            {nom:"Pappardelle aux oeufs", auteur:"Longues", image:"Oeufs", date:"7 - 8 minutes", id:1},
-            {nom:"Penne rigate", auteur:"Courtes", image:"Semoule", date:"11 - 12 minutes", id:2},
-            {nom:"Farfalle", auteur:"Courtes", image:"Semoule", date:"11 - 12 minutes", id:3},
-            {nom:"Lasagnes aux oeufs", auteur:"Lasagnes", image:"Oeufs", date:"20 minutes", id:4}
+
         ]
     }
 
